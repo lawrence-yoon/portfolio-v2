@@ -1,5 +1,5 @@
 import "./globals.css";
-import Link from "next/link";
+import Navbar from "./components/Navbar";
 
 export const metadata = {
   title: "Full Stack Developer - Lawrence Yoon",
@@ -14,26 +14,8 @@ export default function RootLayout({ children }) {
           <h1 className="text-2xl">Lawrence Yoon</h1>
           <h2 className="text-sm">Full Stack Developer</h2>
         </div>
-        <nav className="order-3 md:order-2">
-          <ul className="flex flex-col gap-1 items-end md:gap-4 md:flex-row md:items-center md:justify-center">
-            <li>
-              <Link href="/">home</Link>
-            </li>
-            <li>
-              <Link href="/about">about</Link>
-            </li>
-            <li>
-              <Link href="/projects">projects</Link>
-            </li>
-            <li>
-              <Link href="/blog">blog</Link>
-            </li>
-            <li>
-              <Link href="/contact">contact</Link>
-            </li>
-          </ul>
-        </nav>
-        <div className="grow order-2 overflow-scroll my-4 max-w-xs mx-auto md:order-3">
+        <Navbar />
+        <div className="grow order-2 overflow-scroll my-4 max-w-xs mx-auto md:order-3 md:mt-8 md:max-w-md">
           {children}
         </div>
       </body>
