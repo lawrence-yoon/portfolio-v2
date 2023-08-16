@@ -13,11 +13,11 @@ export default function ProjectsCard({
   handleClick = () => {},
 }) {
   return (
-    <article className="border rounded-lg flex flex-col p-2 max-w-lg">
-      <Image src={imageSrc} alt={imageAlt} />
+    <article className="border rounded-lg flex flex-col px-2 py-1 gap-1 max-w-lg md:px-4 md:py-2 md:gap-2">
+      {/* <Image src={imageSrc} alt={imageAlt} /> */}
       <h4 className="text-xl font-bold">{title}</h4>
       <h5 className="text-md">{tldr}</h5>
-      <div className="flex flex-wrap justify-around">
+      <div className="flex flex-wrap gap-4 justify-center">
         {tagsArray
           ? tagsArray.map((chip, index) => (
               <span

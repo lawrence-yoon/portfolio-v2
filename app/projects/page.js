@@ -4,7 +4,7 @@ import ProjectsCard from "../components/ProjectsCard";
 
 export default function ProjectsPage() {
   return (
-    <div className="flex flex-col gap-2 p-4 w-screen items-center">
+    <div className="flex flex-col gap-2 p-4 w-screen items-center md:gap-4">
       <ProjectsCard
         imageSrc=""
         imageAlt=""
