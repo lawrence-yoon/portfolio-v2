@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="order-3 md:order-2">
-        <ul className="flex flex-col gap-1 items-end md:gap-4 md:flex-row md:items-center md:justify-center">
+        <ul className="flex flex-col gap-1 items-end p-4 md:p-6 md:gap-4 md:flex-row md:items-center md:justify-center">
           <li className={`${pathname === "/about" ? "text-2xl" : ""}`}>
             <Link href="/about">about</Link>
           </li>
