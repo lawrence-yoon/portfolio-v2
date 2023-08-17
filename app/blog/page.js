@@ -1,25 +1,15 @@
 "use client";
+import BlogCard from "../components/BlogCard";
 
 export default function BlogPage() {
   return (
-    <div>
-      <h3>blog page</h3>
+    <div className="flex flex-col gap-4 p-4 max-w-lg items-center mx-auto">
       <BlogCard
         title="title here"
         tldr="tldr here"
-        body="body here"
+        body="body here. dynamic route it to blog/[id] or something. essentially same layout as the projects page. but include the routing in the button press."
         handleClick={() => alert("blog card clicked")}
       />
     </div>
-  );
-}
-
-export function BlogCard({ title, tldr, body, handleClick = () => {} }) {
-  return (
-    <article className="border" onClick={handleClick}>
-      <h4>{title}</h4>
-      <span>{tldr}</span>
-      <p>{body}</p>
-    </article>
   );
 }
