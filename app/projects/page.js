@@ -5,8 +5,10 @@ export default function ProjectsPage() {
   return (
     <div className="flex flex-col gap-2 p-4 w-screen items-center md:gap-4">
       <ProjectsCard
-        imageSrc=""
-        imageAlt=""
+        imageSrc="/images/portfolio-images/witw-tablet.png"
+        imageAlt="screenshot of countries app for tablet"
+        imageSrcM="/images/portfolio-images/witw-mobile.png"
+        imageAltM="screenshot of countries app for mobile"
         tagsArray={[
           "reactjs",
           "nextjs",
@@ -22,8 +24,10 @@ export default function ProjectsPage() {
         // handleClick={() => alert("clicked world")}
       />
       <ProjectsCard
-        imageSrc=""
-        imageAlt=""
+        imageSrc="/images/portfolio-images/space-tourism-tablet.png"
+        imageAlt="screenshot of space tourism app for tablet"
+        imageSrcM="/images/portfolio-images/space-tourism-mobile.png"
+        imageAltM="screenshot of space tourism app for mobile"
         tagsArray={["reactjs", "nextjs", "css-modules", "figma"]}
         title="Space Tourism"
         tldr="Web application for showcasing space tourism, and the people, destinations, and  technologies involved."
@@ -33,8 +37,8 @@ export default function ProjectsPage() {
         // handleClick={() => alert("clicked space")}
       />
       <ProjectsCard
-        imageSrc=""
-        imageAlt=""
+        imageSrc="/images/portfolio-images/taskboard-preview.png"
+        imageAlt="screenshot of taskboard app"
         tagsArray={[
           "reactjs",
           "vitejs",

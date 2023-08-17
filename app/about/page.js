@@ -1,37 +1,40 @@
 import Link from "next/link";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function AboutPage() {
   return (
-    <div className="flex flex-col gap-4 p-4 max-w-lg items-center mx-auto">
+    <div className="flex flex-col p-4 max-w-lg h-full justify-between mx-auto">
       <p>
         New York City based, self taught full stack developer. I have experience
-        in developing with the MERN (mongodb, expressjs, reactjs, nodejs) stack,
-        Nextjs, and vanilla javascript. I am currently learning Typescript and
-        C# for developing robust typesafe code. I prefer to use minimal external
-        dependencies/libraries, but I am learning some libraries for
-        accessibility purposes.
+        in developing web applications with the MERN (mongodb, expressjs,
+        reactjs, nodejs) stack, Nextjs, and vanilla javascript. I am currently
+        learning Typescript and C#.
       </p>
-      <p>
-        Other than web development, my interests include computer hardware,
-        mechanical keyboards, linux, 3D printing, cars, gaming, homesteading,
-        etc.
-      </p>
-      <div className="text-sm self-end">
+      <div className="flex flex-row gap-8 text-xl self-end">
         <Link
           title="https://github.com/lawrence-yoon"
           href="https://github.com/lawrence-yoon"
           target="_blank"
+          className=""
         >
-          github link
+          <FaGithub />
         </Link>
-        <span>|</span>
+        <Link
+          title="https://linkedin.com/in/lawrence-yoon-3b8363253/"
+          href="https://linkedin.com/in/lawrence-yoon-3b8363253/"
+          target="_blank"
+          className=""
+        >
+          <FaLinkedin />
+        </Link>
+        {/* <span>|</span>
         <Link
           title="https://www.frontendmentor.io/profile/lawrence-yoon"
           href="https://www.frontendmentor.io/profile/lawrence-yoon"
           target="_blank"
         >
           frontendmentor link
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

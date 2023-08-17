@@ -9,8 +9,8 @@ const open_sans = Open_Sans({
 });
 
 export const metadata = {
-  title: "Software Developer - Lawrence Yoon",
-  description: "Lawrence Yoon is a self taught software developer from NYC.",
+  title: "Lawrence Yoon - Software Developer",
+  description: "Lawrence Yoon is a software developer from NYC.",
 };
 
 export default function RootLayout({ children }) {
@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <body className="h-screen flex flex-col bg-gray-700 text-gray-300">
         <div className="order-1 flex flex-col items-center gap-1 py-4 justify-end">
           <h1 className="text-2xl">Lawrence Yoon</h1>
-          <h2 className="text-sm">Full Stack Developer</h2>
+          <h2 className="text-sm">Software Developer</h2>
         </div>
         <Navbar />
         <div className="grow order-2 overflow-scroll max-w-full md:order-3">

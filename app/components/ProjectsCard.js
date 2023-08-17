@@ -5,6 +5,8 @@ import Link from "next/link";
 export default function ProjectsCard({
   imageSrc,
   imageAlt,
+  imageSrcM,
+  imageAltM,
   tagsArray,
   title,
   tldr,
@@ -15,7 +17,6 @@ export default function ProjectsCard({
 }) {
   return (
     <article className="border rounded-lg flex flex-col p-4 gap-1 max-w-lg md:gap-2">
-      {/* <Image src={imageSrc} alt={imageAlt} /> */}
       <h4 className="text-xl font-bold">{title}</h4>
       <h5 className="text-md">{tldr}</h5>
       <div className="flex flex-wrap gap-4 justify-center">
@@ -30,6 +31,26 @@ export default function ProjectsCard({
             ))
           : null}
       </div>
+      <div className="flex flex-row h-52 md:h-[20rem]">
+        <div className="relative w-full">
+          <Image
+            src={imageSrc}
+            alt={imageAlt}
+            fill
+            className="object-contain"
+          />
+        </div>
+        {imageSrcM && (
+          <div className="relative w-full">
+            <Image
+              src={imageSrcM}
+              alt={imageAltM}
+              fill
+              className="object-contain"
+            />
+          </div>
+        )}
+      </div>
       <p>{description}</p>
       {/* <button
         className="border border-gray-400 text-gray-400 rounded-full w-fit self-center px-4 py-1 hover:border-white hover:text-white active:border-gray-400 active:text-gray-400"
@@ -37,7 +58,7 @@ export default function ProjectsCard({
       >
         more details
       </button> */}
-      <ul className="flex justify-end text-sm">
+      <ul className="flex justify-end text-sm text-blue-300">
         <li>
           <Link title={githubLink} href={githubLink} target="_blank">
             github link
