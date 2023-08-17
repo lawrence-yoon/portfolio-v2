@@ -39,7 +39,7 @@ function ContactForm() {
       <button
         type="submit"
         disabled={state.submitting}
-        className="self-end border rounded-md w-fit px-6 py-2"
+        className="self-end border rounded-md w-fit px-6 py-2 border-gray-400 text-gray-400 hover:border-white hover:text-white active:border-gray-400 active:text-gray-400 focus:border-white focus:text-white"
       >
         Submit
       </button>

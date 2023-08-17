@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={open_sans.className}>
       <body className="h-screen flex flex-col bg-gray-700 text-gray-300">
-        <div className="order-1 flex flex-col items-center gap-1 py-4 justify-end md:flex-row md:justify-center md:gap-4 ">
+        <div className="order-1 flex flex-col items-center gap-1 py-4 justify-end">
           <h1 className="text-2xl">Lawrence Yoon</h1>
           <h2 className="text-sm">Full Stack Developer</h2>
         </div>

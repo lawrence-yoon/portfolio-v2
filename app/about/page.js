@@ -20,6 +20,7 @@ export default function AboutPage() {
         <Link
           title="https://github.com/lawrence-yoon"
           href="https://github.com/lawrence-yoon"
+          target="_blank"
         >
           github link
         </Link>
@@ -27,6 +28,7 @@ export default function AboutPage() {
         <Link
           title="https://www.frontendmentor.io/profile/lawrence-yoon"
           href="https://www.frontendmentor.io/profile/lawrence-yoon"
+          target="_blank"
         >
           frontendmentor link
         </Link>

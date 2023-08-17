@@ -39,13 +39,13 @@ export default function ProjectsCard({
       </button> */}
       <ul className="flex justify-end text-sm">
         <li>
-          <Link title={githubLink} href={githubLink}>
+          <Link title={githubLink} href={githubLink} target="_blank">
             github link
           </Link>
         </li>
         <span>|</span>
         <li>
-          <Link title={liveLink} href={liveLink}>
+          <Link title={liveLink} href={liveLink} target="_blank">
             live link
           </Link>
         </li>
