@@ -16,10 +16,10 @@ export default function ProjectsCard({
   handleClick = () => {},
 }) {
   return (
-    <article className="border rounded-lg flex flex-col p-4 gap-1 max-w-lg md:gap-2">
+    <article className="border rounded-lg flex flex-col p-4 gap-2 max-w-lg md:gap-4">
       <h4 className="text-xl font-bold">{title}</h4>
       <h5 className="text-md">{tldr}</h5>
-      <div className="flex flex-wrap gap-4 justify-center">
+      <div className="flex flex-wrap gap-4 justify-start">
         {tagsArray
           ? tagsArray.map((chip, index) => (
               <span
