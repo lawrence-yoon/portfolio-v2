@@ -5,10 +5,10 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col p-4 max-w-lg h-full justify-between mx-auto">
       <p>
-        New York City based, self taught full stack developer. I have experience
-        in developing web applications with the MERN (mongodb, expressjs,
-        reactjs, nodejs) stack, Nextjs, and vanilla javascript. I am currently
-        learning Typescript and C#.
+        I am a New York City based, self taught full stack developer. I have
+        experience in developing web applications with the MERN (mongodb,
+        expressjs, reactjs, nodejs) stack, nextjs, and vanilla javascript. I am
+        currently learning typescript and c#.
       </p>
       <div className="flex flex-row gap-8 text-xl self-end">
         <Link

@@ -47,6 +47,8 @@ function ContactForm() {
   );
 }
 
+// className="order-2 text-center my-auto px-1 py-1 gap-3 whitespace-nowrap shadow-sm border border-b-2 border-dark-blue-0 rounded-md md:order-1 hover:border-dark-gray hover:text-dark-gray dark:border-light-gray dark:text-light-gray dark:bg-dark-blue-0 dark:hover:border-dark-gray dark:hover:text-dark-gray"
+
 export default function ContactPage() {
   return <ContactForm />;
 }

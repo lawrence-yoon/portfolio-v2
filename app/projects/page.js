@@ -28,7 +28,7 @@ export default function ProjectsPage() {
         imageAlt="screenshot of space tourism app for tablet"
         imageSrcM="/images/portfolio-images/space-tourism-mobile.png"
         imageAltM="screenshot of space tourism app for mobile"
-        tagsArray={["reactjs", "nextjs", "css-modules", "figma"]}
+        tagsArray={["reactjs", "nextjs", "styled-components", "figma"]}
         title="Space Tourism"
         tldr="Web application for showcasing space tourism, and the people, destinations, and  technologies involved."
         description="This web application was created using the designer's figma design file. Features include dynamic routing, styled components with css modules, responsive media breakouts. Deployed with vercel."
