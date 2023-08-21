@@ -26,7 +26,7 @@ export default function ProjectsPage() {
       <ProjectsCard
         imageSrc="/images/portfolio-images/space-tourism-tablet.png"
         imageAlt="screenshot of space tourism app for tablet"
-        imageSrcM="/images/portfolio-images/space-tourism-mobile.png"
+        imageSrcM="/images/portfolio-images/space-tourism-mobile2.png"
         imageAltM="screenshot of space tourism app for mobile"
         tagsArray={["reactjs", "nextjs", "styled-components", "figma"]}
         title="Space Tourism"
