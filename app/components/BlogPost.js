@@ -10,8 +10,8 @@ export default function BlogPost({ title, tldr, children }) {
         back
       </Link>
       <h3 className="text-xl order-2">{title}</h3>
-      <p className="text-lg order-3">{tldr}</p>
-      <div className="order-4">{children}</div>
+      <p className="order-3 md:order-4">tldr: {tldr}</p>
+      <div className="order-4 md:order-3">{children}</div>
     </div>
   );
 }
