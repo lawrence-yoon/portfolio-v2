@@ -5,7 +5,7 @@ export default function AboutPage() {
   const aboutTags = ["handwired-corne-keyboard", "arch-linux-i3"];
   return (
     <div className="flex flex-col p-4 max-w-lg h-full justify-between mx-auto">
-      <article className="flex flex-col gap-4">
+      <article className="flex flex-col pb-4 gap-4 overflow-scroll">
         <p>
           I am a New York City based, self taught full stack developer. I have
           experience in developing web applications with the MERN (mongodb,
@@ -19,9 +19,13 @@ export default function AboutPage() {
         <div className="flex flex-row flex-wrap gap-4 justify-center">
           {aboutTags.map((elem, id) => {
             return (
-              <span className="px-2 text-sm border rounded-full" key={id}>
+              <Link
+                className="px-2 text-sm border border-gray-600 rounded-full hover:border-white"
+                key={id}
+                href={`blog/${elem}`}
+              >
                 {elem}
-              </span>
+              </Link>
             );
           })}
         </div>

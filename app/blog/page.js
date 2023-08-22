@@ -8,7 +8,7 @@ export default function BlogPage() {
       <BlogCard
         title="handwired-corne"
         tldr="If you are somewhat maker inclined, and not keen on spending hundreds of dollars on a typical mechanical keyboard, instead look to a diy solution. The materials cost for my split keyboard was roughly $40 dollars."
-        url="/blog/handwired-corne"
+        url="/blog/handwired-corne-keyboard"
       />
       <BlogCard
         title="arch-linux-i3"
