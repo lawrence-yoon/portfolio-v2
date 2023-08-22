@@ -1,20 +1,17 @@
-export default function BlogCard({
-  title,
-  tldr,
-  body,
-  handleClick = () => {},
-}) {
+import Link from "next/link";
+
+export default function BlogCard({ title, tldr, body, url }) {
   return (
-    <article className="border rounded-lg flex flex-col p-4 gap-1 max-w-lg md:gap-2">
+    <article className="border border-gray-600 rounded-lg flex flex-col p-4 gap-1 max-w-lg md:gap-2">
       <h4>{title}</h4>
       <span>{tldr}</span>
       <p>{body}</p>
-      <button
-        className="border rounded-md py-1 px-2 self-end"
-        onClick={handleClick}
+      <Link
+        className="border border-gray-600 rounded-md py-1 px-2 self-end hover:border-white"
+        href={`${url}`}
       >
         read more...
-      </button>
+      </Link>
     </article>
   );
 }

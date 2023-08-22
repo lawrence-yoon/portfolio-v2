@@ -14,7 +14,7 @@ function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col max-w-lg p-4 gap-2 mx-auto"
+      className="flex flex-col min-w-[375px] max-w-lg p-4 gap-2 mx-auto md:min-w-[480px]"
     >
       <label htmlFor="email">Email Address</label>
       <input

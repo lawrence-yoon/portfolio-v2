@@ -16,7 +16,7 @@ export default function ProjectsCard({
   handleClick = () => {},
 }) {
   return (
-    <article className="border rounded-lg flex flex-col p-4 gap-2 max-w-2xl md:gap-4">
+    <article className="border border-gray-600 rounded-lg flex flex-col p-4 gap-2 max-w-2xl md:gap-4">
       <h4 className="text-xl font-bold">{title}</h4>
       <h5 className="text-md">{tldr}</h5>
       <div className="flex flex-wrap gap-4 justify-start">
@@ -58,14 +58,14 @@ export default function ProjectsCard({
       >
         more details
       </button> */}
-      <ul className="flex justify-end text-sm text-blue-300">
-        <li>
+      <ul className="flex justify-end text-sm">
+        <li className="text-blue-300">
           <Link title={githubLink} href={githubLink} target="_blank">
             github link
           </Link>
         </li>
         <span>|</span>
-        <li>
+        <li className="text-blue-300">
           <Link title={liveLink} href={liveLink} target="_blank">
             live link
           </Link>
