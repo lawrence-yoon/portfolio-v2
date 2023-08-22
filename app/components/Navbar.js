@@ -29,7 +29,7 @@ export default function Navbar() {
           </li>
           <li
             className={`${
-              pathname === "/blog"
+              pathname.includes("/blog")
                 ? "text-2xl underline underline-offset-8 decoration-4"
                 : "text-gray-500 hover:underline hover:decoration-gray-400 hover:decoration-2 hover:underline-offset-8"
             }`}
