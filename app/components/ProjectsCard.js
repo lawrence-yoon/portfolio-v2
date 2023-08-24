@@ -13,6 +13,7 @@ export default function ProjectsCard({
   description,
   liveLink,
   githubLink,
+  handleClick = () => {},
 }) {
   return (
     <article className="border border-gray-600 rounded-lg flex flex-col p-4 gap-2 max-w-2xl md:gap-4">
@@ -36,7 +37,6 @@ export default function ProjectsCard({
             src={imageSrc}
             alt={imageAlt}
             fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-contain"
           />
         </div>
@@ -46,7 +46,6 @@ export default function ProjectsCard({
               src={imageSrcM}
               alt={imageAltM}
               fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-contain"
             />
           </div>
@@ -60,13 +59,13 @@ export default function ProjectsCard({
         more details
       </button> */}
       <ul className="flex justify-end text-sm">
-        <li className="text-blue-400 visited:text-purple-400 underline">
+        <li className="text-blue-300">
           <Link title={githubLink} href={githubLink} target="_blank">
             github link
           </Link>
         </li>
         <span>|</span>
-        <li className="text-blue-400 visited:text-purple-400 underline">
+        <li className="text-blue-300">
           <Link title={liveLink} href={liveLink} target="_blank">
             live link
           </Link>
