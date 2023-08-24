@@ -50,7 +50,7 @@ export default function ProjectsPage() {
         ]}
         title="Taskboard"
         tldr="Kanban web application to keep track of tasks."
-        description="Full stack application made with the MERN (mongodb, expressjs, reactjs, nodejs)stack. Data stored locally in the browser, and stored in a mongodb database. Deployed with cyclic."
+        description="Full stack application made with the MERN (mongodb, expressjs, reactjs, nodejs)stack. Data is stored in a mongodb database. Passwords are hashed and salted, and session authorization with JWT tokens. Local storage version is available at the try me route. Deployed with cyclic."
         liveLink="https://taskboard.larr.dev/"
         githubLink="https://github.com/lawrence-yoon/do-list"
         // handleClick={() => alert("clicked taskboard")}

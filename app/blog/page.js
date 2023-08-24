@@ -6,7 +6,7 @@ export default function BlogPage() {
     <div className="flex flex-col gap-4 p-4 max-w-2xl items-center mx-auto">
       {/* <h3>my blogs</h3> */}
       <BlogCard
-        title="handwired-corne"
+        title="handwired-corne-keyboard"
         tldr="If you are somewhat maker inclined, and not keen on spending hundreds of dollars on a typical mechanical keyboard, instead look to a diy solution. The materials cost for my split keyboard was roughly $40 dollars."
         url="/blog/handwired-corne-keyboard"
       />
