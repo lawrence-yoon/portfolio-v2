@@ -13,7 +13,7 @@ export default function Navbar() {
             className={`${
               pathname === "/about"
                 ? "text-2xl underline underline-offset-8 decoration-4"
-                : "text-gray-500 md:hover:underline md:hover:decoration-gray-400 md:hover:decoration-2 md:hover:underline-offset-8"
+                : "text-gray-500 no-underline md:hover:underline md:hover:decoration-gray-400 md:hover:decoration-2 md:hover:underline-offset-8"
             }`}
           >
             <Link href="/about">about</Link>
@@ -22,7 +22,7 @@ export default function Navbar() {
             className={`${
               pathname === "/projects"
                 ? "text-2xl underline underline-offset-8 decoration-4"
-                : "text-gray-500 md:hover:underline md:hover:decoration-gray-400 md:hover:decoration-2 md:hover:underline-offset-8"
+                : "text-gray-500 no-underline md:hover:underline md:hover:decoration-gray-400 md:hover:decoration-2 md:hover:underline-offset-8"
             }`}
           >
             <Link href="/projects">projects</Link>
@@ -31,7 +31,7 @@ export default function Navbar() {
             className={`${
               pathname.includes("/blog")
                 ? "text-2xl underline underline-offset-8 decoration-4"
-                : "text-gray-500 md:hover:underline md:hover:decoration-gray-400 md:hover:decoration-2 md:hover:underline-offset-8"
+                : "text-gray-500 no-underline md:hover:underline md:hover:decoration-gray-400 md:hover:decoration-2 md:hover:underline-offset-8"
             }`}
           >
             <Link href="/blog">blog</Link>
@@ -40,7 +40,7 @@ export default function Navbar() {
             className={`${
               pathname === "/contact"
                 ? "text-2xl underline underline-offset-8 decoration-4"
-                : "text-gray-500 md:hover:underline md:hover:decoration-gray-400 md:hover:decoration-2 md:hover:underline-offset-8"
+                : "text-gray-500 no-underline md:hover:underline md:hover:decoration-gray-400 md:hover:decoration-2 md:hover:underline-offset-8"
             }`}
           >
             <Link href="/contact">contact</Link>
