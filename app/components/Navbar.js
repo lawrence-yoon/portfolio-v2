@@ -22,7 +22,7 @@ export default function Navbar() {
             className={`${
               pathname === "/projects"
                 ? "text-2xl underline underline-offset-8 decoration-4"
-                : "text-gray-500 hover:underline hover:decoration-gray-400 hover:decoration-2 hover:underline-offset-8"
+                : "text-gray-500 md:hover:underline md:hover:decoration-gray-400 md:hover:decoration-2 md:hover:underline-offset-8"
             }`}
           >
             <Link href="/projects">projects</Link>
