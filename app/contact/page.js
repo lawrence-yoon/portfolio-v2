@@ -14,35 +14,41 @@ function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col min-w-[375px] max-w-lg p-4 gap-2 mx-auto md:min-w-[480px]"
+      className="flex flex-col w-screen p-4 gap-2 mx-auto md:min-w-[480px]"
     >
-      <label htmlFor="email">Email Address</label>
-      <input
-        id="email"
-        type="email"
-        name="email"
-        className="bg-gray-500 p-2 border"
-        placeholder="example@email.com"
-        autoFocus
-      />
-      <ValidationError prefix="Email" field="email" errors={state.errors} />
-      <label htmlFor="message">Message</label>
-      <textarea
-        id="message"
-        name="message"
-        className="bg-gray-500 border p-2"
-        placeholder="
+      <div className="flex flex-col mx-auto w-full max-w-lg gap-2">
+        <label htmlFor="email">Email Address</label>
+        <input
+          id="email"
+          type="email"
+          name="email"
+          className="bg-gray-500 p-2 border"
+          placeholder="example@email.com"
+          autoFocus
+        />
+        <ValidationError prefix="Email" field="email" errors={state.errors} />
+        <label htmlFor="message">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          className="bg-gray-500 border p-2"
+          placeholder="
       Type message here..."
-        rows="4"
-      />
-      <ValidationError prefix="Message" field="message" errors={state.errors} />
-      <button
-        type="submit"
-        disabled={state.submitting}
-        className="self-end border rounded-md w-fit px-6 py-2 border-gray-400 text-gray-400 hover:border-white hover:text-white active:border-gray-400 active:text-gray-400 focus:border-white focus:text-white"
-      >
-        Submit
-      </button>
+          rows="4"
+        />
+        <ValidationError
+          prefix="Message"
+          field="message"
+          errors={state.errors}
+        />
+        <button
+          type="submit"
+          disabled={state.submitting}
+          className="self-end border rounded-md w-fit px-6 py-2 border-gray-400 text-gray-400 hover:border-white hover:text-white active:border-gray-400 active:text-gray-400 focus:border-white focus:text-white"
+        >
+          Submit
+        </button>
+      </div>
     </form>
   );
 }

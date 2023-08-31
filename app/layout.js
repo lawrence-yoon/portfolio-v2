@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
           <h2 className="text-sm">Software Developer</h2>
         </div>
         <Navbar />
-        <div className="grow order-2 overflow-scroll mx-auto max-w-full md:order-3">
+        <div className="grow order-2 overflow-auto mx-auto max-w-full md:order-3">
           {children}
         </div>
       </body>

@@ -3,7 +3,7 @@ import BlogCard from "../components/BlogCard";
 
 export default function BlogPage() {
   return (
-    <div className="flex flex-col gap-4 p-4 max-w-2xl items-center mx-auto">
+    <div className="flex flex-col gap-4 p-4 w-screen items-center mx-auto">
       {/* <h3>my blogs</h3> */}
       <BlogCard
         title="handwired-corne-keyboard"

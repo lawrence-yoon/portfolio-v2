@@ -4,8 +4,8 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 export default function AboutPage() {
   const aboutTags = ["handwired-corne-keyboard", "arch-linux-i3"];
   return (
-    <div className="flex flex-col p-4 max-w-lg h-full justify-between mx-auto">
-      <article className="flex flex-col pb-4 gap-4 overflow-scroll">
+    <div className="flex flex-col p-4 w-screen h-full mx-auto">
+      <article className="flex flex-col max-w-lg mx-auto pb-4 gap-4">
         <p>
           I am a New York City based, self taught full stack developer. I have
           experience in developing web applications with the MERN (mongodb,
@@ -35,7 +35,7 @@ export default function AboutPage() {
         </p>
         <p>Thank you for visiting my website.</p>
       </article>
-      <div className="flex flex-row gap-8 text-xl self-end">
+      <div className="flex flex-row gap-8 text-xl self-end md:self-center">
         <Link
           title="https://github.com/lawrence-yoon"
           href="https://github.com/lawrence-yoon"
