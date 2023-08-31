@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={open_sans.className}>
-      <body className="h-screen flex flex-col bg-gradient-to-tl from-black to-slate-900 text-gray-300 overflow-hidden md:bg-gradient-to-br">
+      <body className="h-screen supports-[height:100cqh]:h-[cqh] supports-[height:100svh]:h-[100svh] flex flex-col bg-gradient-to-tl from-black to-slate-900 text-gray-300 overflow-hidden md:bg-gradient-to-br">
         <div className="order-1 flex flex-col items-center gap-1 pt-4 justify-end">
           <h1 className="text-2xl">Lawrence Yoon</h1>
           <h2 className="text-sm">Software Developer</h2>
