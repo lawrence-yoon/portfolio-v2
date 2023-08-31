@@ -11,3 +11,7 @@
     )
     rgb(var(--background-start-rgb));
 } */
+
+html {
+  background-color: black;
+}
