@@ -12,7 +12,7 @@ export default function Navbar() {
           <li
             className={`border-transparent border-b-2 ${
               pathname === "/about"
-                ? "text-[2rem] leading-5 border-slate-700 border-b-8"
+                ? "text-[2rem] leading-5 border-slate-500 border-b-8"
                 : "text-gray-500 md:hover:border-gray-500 md:hover:leading-3"
             }`}
           >
@@ -21,7 +21,7 @@ export default function Navbar() {
           <li
             className={`border-transparent border-b-2 ${
               pathname === "/projects"
-                ? "text-[2rem] leading-5 border-slate-700 border-b-8"
+                ? "text-[2rem] leading-5 border-slate-500 border-b-8"
                 : "text-gray-500 md:hover:border-gray-500 md:hover:leading-3"
             }`}
           >
@@ -30,7 +30,7 @@ export default function Navbar() {
           <li
             className={`border-transparent border-b-2 ${
               pathname.includes("/blog")
-                ? "text-[2rem] leading-5 border-slate-700 border-b-8"
+                ? "text-[2rem] leading-5 border-slate-500 border-b-8"
                 : "text-gray-500 md:hover:border-gray-500 md:hover:leading-3"
             }`}
           >
@@ -39,7 +39,7 @@ export default function Navbar() {
           <li
             className={`border-transparent border-b-2 ${
               pathname === "/contact"
-                ? "text-[2rem] leading-5 border-slate-700 border-b-8"
+                ? "text-[2rem] leading-5 border-slate-500 border-b-8"
                 : "text-gray-500 md:hover:border-gray-500 md:hover:leading-3"
             }`}
           >
